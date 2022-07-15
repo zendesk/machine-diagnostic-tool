@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Machine Diagnostic Tool",
+  "description": "A chrome extension built with React 17, Webpack 5, and Webpack Dev Server 4",
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/img/icon-34.png"
+  },
+  "icons": {
+    "128": "assets/img/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/img/icon-128.png",
+        "assets/img/icon-34.png",
+        "assets/img/screenshot-icon.png",
+        "assets/img/loading-icon.gif"
+      ],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "management",
+    "debugger",
+    "desktopCapture",
+    "downloads",
+    "system.cpu",
+    "system.memory",
+    "system.storage",
+    "downloads"
+  ],
+  "host_permissions": ["https://*/*"],
+  "externally_connectable": {
+    "matches": ["https://xtzie.github.io/Speedometer/"]
+  }
+}

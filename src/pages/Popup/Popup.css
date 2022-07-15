@@ -1,0 +1,114 @@
+.App {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Feedback-prompt {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  font-size: 12px;
+  border: none;
+  width: 190px;
+}
+
+.Refresh-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background: transparent;
+  border: none;
+}
+
+.Run-tests-button,
+.Screenshot-button,
+.Record-button {
+  position: absolute;
+  bottom: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+
+.Run-tests-button {
+  right: 69%;
+}
+
+.Screenshot-button {
+  right: 41%;
+}
+
+.Record-button {
+  right: 11%;
+}
+
+.Refresh-button:disabled,
+.Run-tests-button:disabled,
+.Screenshot-button:disabled,
+.Record-button:disabled {
+  opacity: 0.5;
+}
+
+.Run-tests-button p,
+.Screenshot-button p,
+.Record-button p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.Refresh-button-icon {
+  width: 14px;
+  height: 14px;
+}
+.Run-tests-button-icon,
+.Screenshot-button-icon,
+.Record-button-icon {
+  width: 50px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

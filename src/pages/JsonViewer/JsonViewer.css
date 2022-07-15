@@ -1,0 +1,14 @@
+.JsonViewerContainer {
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: monospace;
+  display: flex;
+}
+
+.pointer {
+  font-size: inherit !important;
+}
+
+.container {
+  line-height: 1.3 !important;
+}

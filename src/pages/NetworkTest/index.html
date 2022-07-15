@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Network Test</title>
+    <script src="ndt7.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="overlay"></div>
+
+      <div class="banner">
+        <div class="bannerBody">
+          <img
+            src="../assets/img/loading-icon.gif"
+            alt="Loading icon"
+            class="bannerIcon"
+          />
+        </div>
+        <div class="bannerText">
+          <span class="bannerTextHeader"
+            >Machine Diagnostic: Network test in progress...</span
+          >
+          <span class="bannerTextBody"
+            >Please <b>remain active on this tab</b> and avoid navigating to
+            other windows. Once complete, this tab will be closed
+            automatically</span
+          >
+        </div>
+      </div>
+    </div>
+    <div id="server" style="margin-top: 100px"></div>
+    <div id="download"></div>
+    <div id="upload"></div>
+    <script type="text/javascript" src="networkTest.js"></script>
+  </body>
+</html>
